@@ -1,10 +1,19 @@
-import { store } from 'Store/store';
+import { store } from 'Store/Store';
 import { Provider } from 'react-redux';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { MainPage } from './Pages/MainPage/MainPage';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <MainPage />,
+    },
+]);
 
 function App() {
     return (
         <Provider store={store}>
-            <div>Hello World</div>
+            <RouterProvider router={router} />
         </Provider>
     );
 }
