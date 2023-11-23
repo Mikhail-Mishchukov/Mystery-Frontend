@@ -23,7 +23,8 @@
 
         "baseUrl": ".",
         "paths": {
-            "Store/*": ["./src/Store/*"]
+            "Store/*": ["./src/Store/*"],
+            "UI/*": ["./src/UI/*"]
         }
     },
     "include": [".eslintrc.cjs", "src"],
