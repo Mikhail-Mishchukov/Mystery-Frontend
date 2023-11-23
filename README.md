@@ -30,4 +30,4 @@ Built application:
 npm run build
 ```
 
-It will create application outside of project's root (Relative path: ../src/public).
+It will create dist directory with application
