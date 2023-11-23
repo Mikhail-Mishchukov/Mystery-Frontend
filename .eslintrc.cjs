@@ -31,9 +31,9 @@ module.exports = {
     },
     plugins: ['@typescript-eslint', 'react', 'prettier'],
     rules: {
-        // '@typescript-eslint/indent': ['error', 4],
-        // 'react/react-in-jsx-scope': 'off',
-        // 'react/jsx-indent': ['error', 4],
+        '@typescript-eslint/indent': ['error', 4],
+        'react/react-in-jsx-scope': 'off',
+        'react/jsx-indent': ['error', 4],
     },
     ignorePatterns: ['vite.config.ts'],
 };

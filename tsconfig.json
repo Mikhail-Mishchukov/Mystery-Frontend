@@ -19,7 +19,12 @@
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+
+        "baseUrl": ".",
+        "paths": {
+            "Store/*": ["./src/Store/*"]
+        }
     },
     "include": [".eslintrc.cjs", "src"],
     "exclude": ["vite.config.ts"],
