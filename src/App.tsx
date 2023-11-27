@@ -1,4 +1,5 @@
 import { store } from 'Store/Store';
+import 'UI/Styles/Reset.scss';
 import { Provider } from 'react-redux';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { MainPage } from './Pages/MainPage/MainPage';
