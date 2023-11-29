@@ -1,62 +1,60 @@
-@import './Variables.scss';
-
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 900;
     src:
         local('Roboto'),
         local('Roboto-Black'),
-        url('../../../Assets/fonts/RobotoBlack.woff2') format('woff2');
+        url('/fonts/RobotoBlack.woff2') format('woff2');
 }
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 400;
     src:
         local('Roboto'),
         local('Roboto-Regular'),
-        url('../../../Assets/fonts/RobotoRegular.woff2') format('woff2');
+        url('/fonts/RobotoRegular.woff2') format('woff2');
 }
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 700;
     src:
         local('Roboto'),
         local('Roboto-Bold'),
-        url('../../../Assets/fonts/RobotoBold.woff2') format('woff2');
+        url('/fonts/RobotoBold.woff2') format('woff2');
 }
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 500;
     src:
         local('Roboto'),
         local('Roboto-Medium'),
-        url('../../../Assets/fonts/RobotoMedium.woff2') format('woff2');
+        url('/fonts/RobotoMedium.woff2') format('woff2');
 }
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 300;
     src:
         local('Roboto'),
         local('Roboto-Light'),
-        url('../../../Assets/fonts/RobotoLight.woff2') format('woff2');
+        url('/fonts/RobotoLight.woff2') format('woff2');
 }
 @font-face {
-    font-family: var(--font);
+    font-family: 'Roboto';
     font-style: normal;
     font-display: swap;
     font-weight: 100;
     src:
         local('Roboto'),
         local('Roboto-Thin'),
-        url('../../../Assets/fonts/RobotoThin.woff2') format('woff2');
+        url('/fonts/RobotoThin.woff2') format('woff2');
 }
