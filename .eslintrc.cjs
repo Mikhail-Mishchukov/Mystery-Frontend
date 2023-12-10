@@ -35,6 +35,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'react/jsx-indent': ['error', 4],
         'import/prefer-default-export': 'off',
+        'react/require-default-props': 'off',
     },
     ignorePatterns: ['vite.config.ts', 'dist'],
 };
