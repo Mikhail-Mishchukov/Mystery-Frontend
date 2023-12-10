@@ -4,11 +4,20 @@ import 'UI/Styles/GlobalStyles.scss';
 import { Provider } from 'react-redux';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { MainPage } from './Pages/MainPage/MainPage';
+import { ErrorPane } from './Pages/Components/ErrorPane/ErrorPane';
+import { BasePage } from './Pages/BasePage/BasePage';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <MainPage />,
+        element: <BasePage />,
+        errorElement: <ErrorPane />,
+        children: [
+            {
+                path: '/',
+                element: <MainPage />,
+            },
+        ],
     },
 ]);
 
