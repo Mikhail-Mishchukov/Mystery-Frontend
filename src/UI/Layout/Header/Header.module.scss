@@ -1,3 +1,8 @@
+@use '../../Styles/Variables.scss';
+
 .header {
-    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: var(--text-color-primary);
 }
