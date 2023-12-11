@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { MainPage } from './Pages/MainPage/MainPage';
 import { ErrorPane } from './Pages/Components/ErrorPane/ErrorPane';
 import { BasePage } from './Pages/BasePage/BasePage';
+import { AboutDeveloperPage } from './Pages/AboutDeveloperPage/AboutDeveloperPage';
+import { AuthorizationPage } from './Pages/AutorizationPage/AuthorizationPage';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <MainPage />,
+            },
+            {
+                path: '/aboutDeveloper',
+                element: <AboutDeveloperPage />,
+            },
+            {
+                path: '/login',
+                element: <AuthorizationPage />,
             },
         ],
     },
