@@ -1,4 +1,4 @@
-import { IconSize, IconType } from './Entities';
+import { IconColor, IconSize, IconType } from './Entities';
 
 export function getIconSize(size: IconSize) {
     switch (size) {
@@ -10,6 +10,17 @@ export function getIconSize(size: IconSize) {
             return 24;
         default:
             return 20;
+    }
+}
+
+export function getIconColor(color: IconColor) {
+    switch (color) {
+        case 'primary':
+            return '#eddea4';
+        case 'secondary':
+            return '#FEFFA5';
+        default:
+            return '#FEFFA5';
     }
 }
 

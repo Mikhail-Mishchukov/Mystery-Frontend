@@ -1,8 +1,26 @@
 @use '../../Styles/Variables.scss';
 
-.header {
-    display: flex;
+.navBar {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
     align-items: center;
     padding: 10px;
+    gap: 20px;
     color: var(--text-color-primary);
+}
+
+.linksContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+}
+
+.actionLinksContainer {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
 }
