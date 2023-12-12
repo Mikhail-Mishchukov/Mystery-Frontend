@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { appSettingsReducer } from './AppSettings/AppSettingsSlice';
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        appSettings: appSettingsReducer,
+    },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

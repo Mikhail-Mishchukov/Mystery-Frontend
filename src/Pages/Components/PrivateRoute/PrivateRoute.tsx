@@ -1,3 +1,4 @@
+import { useAppSelector } from 'Root/Store/Store';
 import { ReactElement } from 'react';
 import { Navigate, Route } from 'react-router-dom';
 
@@ -7,7 +8,11 @@ interface PrivateRouteProps {
 }
 
 export function PrivateRoute({ path, element }: PrivateRouteProps) {
-    if (isAuthenticated) {
+    const { isAuthorized } = useAppSelector(
+        (state) => state.appSettings.userData
+    );
+
+    if (isAuthorized) {
         return <Route path={path} element={element} />;
     }
     return <Navigate to="/login" />;

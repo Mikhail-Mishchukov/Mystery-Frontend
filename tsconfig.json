@@ -23,6 +23,7 @@
 
         "baseUrl": ".",
         "paths": {
+            "Root/*": ["./src/*"],
             "Store/*": ["./src/Store/*"],
             "UI/*": ["./src/UI/*"]
         }
